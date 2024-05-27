@@ -3,7 +3,7 @@
 Tags: [[Mathe]] [[Grundlagen-&-Infinitesimalrechnung]] [[Python]] [[Data-Science]]
 
 
-Mit Sigma $ \Sigma $ wird impliziert, dass die angegebenen Elemente ***summiert*** werden.
+Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemente ***summiert*** werden.
 
 Möchte man die Zahlen 1 bis 8 durchlaufen und jede Zahl dabei mit 5 multiplizieren, würde die Formel lauten:    $\sum^{8}_{i=1}5i$
 Das lässt sich natürlich auch in Python umsetzen.
