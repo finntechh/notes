@@ -5,7 +5,7 @@ Tags: [[Mathe]] [[Data-Science]] [[Python]] [[Grundlagen-&-Infinitesimalrechnung
 
 Das Integral ist die Umkehrung der Ableitung, statt *abgeleitet*, wird *integriert* oder *aufgeleitet*. Ein Integral einer Funktion $\int f(x)\ dx$ gibt die *Fläche unter dem Graphen* an.
 
-Integralberechnung mit der *integrate()-Funktion*. Sie nimmt die Funktion $f$ und eine range aus ([Variable nach der abgeleitet wird], [Untere Grenze], [Obere Grenze]) als Argumente.
+Integralberechnung mit der *integrate()-Funktion*. Sie nimmt die Funktion $f$ und eine range aus ([Variable nach der aufgeleitet wird], [Untere Grenze], [Obere Grenze]) als Argumente.
 
 
 ```python
