@@ -1,26 +1,38 @@
-#Note
-27-05-2024
-Tags: [[Mathe]] [[Grundlagen-&-Infinitesimalrechnung]] [[Python]] [[Data-Science]]
+# Summationen $\Sigma$
 
+Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemnte ***summiert*** werden.
 
-Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemente ***summiert*** werden.
+Möchte man die Zahlen 1 bis 8 durchlaufen und jede Zahl dabei mit 5 multiplizieren, würde die Formel lauten:    $\sum\limits_{i=1}^8 5i$
 
-Möchte man die Zahlen 1 bis 8 durchlaufen und jede Zahl dabei mit 5 multiplizieren, würde die Formel lauten:    $\sum^{8}_{i=1}5i$
 Das lässt sich natürlich auch in Python umsetzen.
 
 
 ```python
-summation = sum(5*i for i in range(1, 9))
+# Die Stopp integer wird nicht mitgezählt, weshalb sie eins über 8 gewähltwerden muss.
+start = 1
+stop = 8
+
+summation = sum(5*i for i in range(start, stop + 1))
 print(summation) # Ausgabe 180
+
+# Demonstration der range() Funktion
+numbers =[]
+
+for i in range(start, stop + 1):
+    numbers.append(i)
+
+print(numbers) 
+numbers = []
+
+for j in range(start, stop):
+    numbers.append(j)
+    
+print(numbers)    
 ```
 
-Allgemein geschrieben sieht sie so aus: $\sum^{n}_{i=1}x_i$   Dabei ist $n$ die *Anzahl der Elemente* und $x_i$ ein iteriertes Element. $i=1$ gibt die *Schrittweite* 1 an.
+    180
+    [1, 2, 3, 4, 5, 6, 7, 8]
+    [1, 2, 3, 4, 5, 6, 7]
+    
 
-
-
-
-
----
-## Info
-
-[[Mathe Basics für Data Scientists]]
+Allgemein geschrieben sieht sie so aus: $\sum\limits_{i=1}^n x_i$   Dabei ist $n$ die *Anzahl der Elemente* und $x_i$ ein iteriertes Element. $i=1$ gibt die *Schrittweite* 1 an.
