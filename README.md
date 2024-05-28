@@ -1,4 +1,2 @@
-# notes
 
-suck
-lol
+
