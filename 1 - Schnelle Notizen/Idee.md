@@ -1,2 +1,4 @@
 - Familien Wiki mit Nick abklären
-- Blender Lucas virtueller 
+- Blender Lucas virtueller Messestand Blechrein
+- Landjugend Website mit vue erstellen 
+- Portfolio Website mit vue erstellen
