@@ -1,4 +1,6 @@
-
+#Note
+28-05-2024
+Tags: [[Mathe]] [[Data-Science]] [[Python]] [[Grundlagen-&-Infinitesimalrechnung]]
 
 Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemente ***summiert*** werden.
 
@@ -32,3 +34,9 @@ print(numbers)
 
 
 Allgemein geschrieben sieht sie so aus: $\sum\limits_{i=1}^n x_i$   Dabei ist $n$ die *Anzahl der Elemente* und $x_i$ ein iteriertes Element. $i=1$ gibt die *Schrittweite* 1 an.
+
+
+
+---
+## Info
+

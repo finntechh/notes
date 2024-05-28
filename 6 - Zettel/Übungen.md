@@ -1,14 +1,8 @@
 #Note
 28-05-2024
-Tags: 
+Tags: [[Mathe]] [[Data-Science]] [[Python]] [[Grundlagen-&-Infinitesimalrechnung]]
 
-
-
-
-
-
----
-## Info## Übungen nach Kapitel 1
+## Übungen nach Kapitel 1
 
 1. Ist der Wert 62,6738 rational oder irrational?
 
@@ -98,3 +92,12 @@ area = integrate(f, (x, untere_grenze, obere_grenze))
 
 print(area)
 ```
+
+
+
+
+
+---
+## Info
+
+[[Mathe Basics für Data Scientists]]

@@ -1,3 +1,7 @@
+#Note
+28-05-2024
+Tags: [[Mathe]] [[Data-Science]] [[Python]] [[Grundlagen-&-Infinitesimalrechnung]]
+
 ## Ableitungen $f'(x)$
 
 Die Ableitung gibt die *momentane Änderungsrate* an einem Punkt $x$ an.
@@ -22,7 +26,7 @@ print(dx_f.subs(x, x_value))
 
 ## Partielle Ableitungen $f'(x,y)$
 
-Bei partiellen Ableitungen wird jede Variable estra abgeleitet.
+Bei partiellen Ableitungen wird jede Variable extra abgeleitet.
 
 Die *momentane Änderungsraten* werden dabei als Gradienten betrachtet. 
 
@@ -49,3 +53,12 @@ print(f"Nach x abgeleitet an der Stelle {x_wert}: {dx_f.subs(x, x_wert)}\nNach y
 
 plot3d(f)
 ```
+
+
+
+
+
+---
+## Info
+
+[[Mathe Basics für Data Scientists]]

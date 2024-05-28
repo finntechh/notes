@@ -1,4 +1,7 @@
 ## Integrale $\int$
+#Note
+28-05-2024
+Tags: [[Mathe]] [[Data-Science]] [[Python]] [[Grundlagen-&-Infinitesimalrechnung]]
 
 Das Integral ist die Umkehrung der Ableitung, statt *abgeleitet*, wird *integriert* oder *aufgeleitet*. Ein Integral einer Funktion $\int f(x)\ dx$ gibt die *Fläche unter dem Graphen* an.
 
@@ -39,3 +42,12 @@ area = approx_integral(a=0, b=1, n=1000000, f=my_function)
 
 print(area)
 ```
+
+
+
+
+
+---
+## Info
+
+[[Mathe Basics für Data Scientists]]
