@@ -1,6 +1,6 @@
-# Summationen $\Sigma$
 
-Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemnte ***summiert*** werden.
+
+Mit Sigma $\Sigma$ wird impliziert, dass die angegebenen Elemente ***summiert*** werden.
 
 Möchte man die Zahlen 1 bis 8 durchlaufen und jede Zahl dabei mit 5 multiplizieren, würde die Formel lauten:    $\sum\limits_{i=1}^8 5i$
 
@@ -30,9 +30,5 @@ for j in range(start, stop):
 print(numbers)    
 ```
 
-    180
-    [1, 2, 3, 4, 5, 6, 7, 8]
-    [1, 2, 3, 4, 5, 6, 7]
-    
 
 Allgemein geschrieben sieht sie so aus: $\sum\limits_{i=1}^n x_i$   Dabei ist $n$ die *Anzahl der Elemente* und $x_i$ ein iteriertes Element. $i=1$ gibt die *Schrittweite* 1 an.
