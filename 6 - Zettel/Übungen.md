@@ -1,4 +1,14 @@
-## Übungen nach Kapitel 1
+#Note
+28-05-2024
+Tags: 
+
+
+
+
+
+
+---
+## Info## Übungen nach Kapitel 1
 
 1. Ist der Wert 62,6738 rational oder irrational?
 
