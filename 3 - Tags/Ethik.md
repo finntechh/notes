@@ -1,1 +1,1 @@
-``` list from
+``` list from [[Ethik]] ```
