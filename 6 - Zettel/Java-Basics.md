@@ -259,20 +259,31 @@ default:
 
 Schleifen führen ihren Codeblock mehrmals aus
 
-*for-Schleife*
+#### for-Schleife
+Eine for Schleife ist in Java durch folgendes Schema aufgebaut.  
 ```Java
-for (int i = 1; i <= 50; i++) {
-    methodToRepeat();
-}
+for (Init, Bedingung, Schritt) {
+    Anweisung;
+    }
 ```
-*while-Schleife*
+for-Schleifen können auch gelabeld werden.  
+(xx: for ...)  
+Mit *enhanced for-loops* kann über verschiedene Java Datenstrukturen iteriert werden. 
 ```Java
-int whileCounter = 1;
-while (whileCounter <= 50) {
-    methodToRepeat();
-    whileCounter++;
-}
+int[] intArr = { 0,1,2,3,4 }; 
+for (int num : intArr) {
+    System.out.println("Enhanced for-each loop: i = " + num);
+    }
 ```
+
+#### while-Schleife
+```Java
+while (Ausdruck) {
+    Anweisung;
+    }
+```
+#### do while-Schleife
+
 Beide Schleifen rufen die Methode methodToRepeat() 50 mal auf.
 Funktionen und Methoden meinen das Selbe. In Java spricht man von Methoden und in Python von Funktionen.
 
@@ -296,4 +307,5 @@ for (int i = 1; i <= 50; i++) {
 #### Continue
 
 *continue* funktioniert ähnlich wie *break* nur mit dem Unterschied, dass der Rest der Schleife nicht abgebrochen
-sondern übersprungen wird.
+sondern übersprungen wird.  
+
