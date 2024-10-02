@@ -1,3 +1,4 @@
+## Java - Basics
 
 ### Primitive Datentypen
 
@@ -164,6 +165,49 @@ public class SimpleAddition {
 ```
 Als Codeblock bezeichnet man den Code zwischen den geschweiften Klammern einer Klasse.
 
+#### Common Signature
+
+Die gewöhnliche Vorlage der main Methode ist:
+```Java
+public static void main(String[] args) {}
+```
+
+Bedeutung der Keywörter:
++ *public* --> access modifier, public ist global sichtbar
++ *static* --> auf die Methode kann direkt von der Klasse aus zugegriffen werden.
+Es muss kein Objekt mit einer Referenz erstellt werden um den Codeblock auszuführen.
++ *void* --> diese Methode gibt kein Wert zurück.
++ *main* --> name der Methode, wird von der JVM gesucht.  
+
+Der *args* Parameter steht für Werte die von der Methode empfangen werden.  
+*args* ist ein *array of Strings*.
+
+#### Verschiedene Arten der *main()* Methode
+
+```Java
+public static void main(String []args) {}
+//
+public static void main(String args[]) {}
+// Argmuente können als varargs dargestellt werden
+public static void main(String...args) {}
+// strictfp wird für kompabilität zwischen Prozessoren verwendet
+public strictfp static void main(String[] args) {}
+```
+
+*synchronized* und *final* sind weiter Schlüsselwörter.  
+*final* kann genutzt werden um zu verhindern, dass das args array nochmal verändert wird.  
+
+```Java
+public static void main(final String[] args) {}
+// mit allen Keywörtern
+final static synchronized strictfp void main(final String[] args) { }
+```
+
+Es können auch mehrere *main()*  Methoden verwendet werden. In der *MANIFEST.MF* Datei kann
+der JVM (Java Vitrual Machine) gesagt werden, welche *main()* Methode zuerst ausgeführt werden soll.  
+Meisten genutzt wird das bei der Erstellung einer ausführbaren .jar Datei.
+
+
 ### Compiling und Ausführung
 
 Java Runtime Environment JRE muss installiert sein.  
@@ -177,3 +221,79 @@ ausgeführt werden kann.
 ```Java
 java Programm
 ```
+
+### Java Kontrollstrukturen
+
+#### Conditional Branches
+
+***if / else / else if***  
+```Java
+if (Bedingung) {
+    Codeblock
+} else { codeblock }
+```
+***Ternary Operator***  
+kann den if/else Block ersetzen und den code lesbarer gestalten.
+```Java
+System.out.println(count > 2 ? "Count ist größer als 2" : "Count is kleiner oder gleich 2");
+```
+***Switch***  
+Ein switch kann genutzt werden wenn es mehrere Fälle auf die Abfrage einer Bedingung gibt.  
+Damit kann das Überfluten des codes mit if/else statement verhindert werden.
+
+```Java
+int count = 3;
+switch(count) {
+case 0:
+    System.out.println("Count ist 0");
+    break;
+case 1: 
+    System.out.println("Count ist 1");
+    break;
+default:
+    System.out.println("Count ist negativ oder größer als 1");
+}
+```
+
+### Schleifen in Java
+
+Schleifen führen ihren Codeblock mehrmals aus
+
+*for-Schleife*
+```Java
+for (int i = 1; i <= 50; i++) {
+    methodToRepeat();
+}
+```
+*while-Schleife*
+```Java
+int whileCounter = 1;
+while (whileCounter <= 50) {
+    methodToRepeat();
+    whileCounter++;
+}
+```
+Beide Schleifen rufen die Methode methodToRepeat() 50 mal auf.
+Funktionen und Methoden meinen das Selbe. In Java spricht man von Methoden und in Python von Funktionen.
+
+#### Break 
+
+Mit *break* kann eine Schleife verlassen werden.
+
+Bis 50 zählen aber stoppen, sobald die erste Zahl kommt, welche durch 12 ohne Rest teilbar ist, aber nicht die Zahl selbst ist.
+
+```Java
+for (int i = 1; i <= 50; i++) {
+    System.out.println("Zahl " + i);
+    if (i > 12) {
+        if (i % 12 == 0) {
+            break;
+        }
+    }
+}
+```
+
+#### Continue
+
+*continue* funktioniert ähnlich wie *break* nur mit dem Unterschied, dass der Rest der Schleife nicht abgebrochen
+sonder übersprungen wird.
