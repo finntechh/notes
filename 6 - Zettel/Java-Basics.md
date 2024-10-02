@@ -1,4 +1,3 @@
-## Java Basics
 
 ### Primitive Datentypen
 
@@ -46,12 +45,12 @@ char c = 61; //61 in der Unicode Tabelle ist das Äquivalent zu klein a.
 #### Overflow
 
 Trifft ein wenn die maximale Grenze des Typs überschritten wird 
-und gibt infinity $ \infty $.  
+und gibt infinity $\infty$.  
 
 #### Underflow
 
 Das Gegenteil zum Overflow trifft auf wenn die unterste Grenze
-(Im negtaiven Bereich) unterschritten wird.  
+(Im negativen Bereich) unterschritten wird.  
 In diesem Fall wird 0.0 ausgegeben.
 
 ### Objekt/Refernz - Typen
