@@ -296,4 +296,4 @@ for (int i = 1; i <= 50; i++) {
 #### Continue
 
 *continue* funktioniert ähnlich wie *break* nur mit dem Unterschied, dass der Rest der Schleife nicht abgebrochen
-sonder übersprungen wird.
+sondern übersprungen wird.
