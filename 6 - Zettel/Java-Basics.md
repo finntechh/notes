@@ -1,4 +1,6 @@
-## Java - Basics
+#Note
+03.10.2024
+Tags: [[Data-Science]]
 
 ### Primitive Datentypen
 
