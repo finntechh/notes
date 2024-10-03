@@ -1,6 +1,6 @@
 #Note
 03.10.2024
-Tags: [[Data-Science]]
+Tags: [[Data-Science]] [[Java]] 
 
 ### Primitive Datentypen
 
