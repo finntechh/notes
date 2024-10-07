@@ -1,5 +1,23 @@
 ## Java - Basics
 
+### Kommentierung in Java
+
+Die Kommentierung erfolgt in Java nach einem bestimmten Schema.
+```Java
+/** (begin-comment delimiter)
+* Kleine Zusammenfassung der Methode.
+* Mehrere Absätze mit <p> Tag trennen.
+* Beschreibung was die Methode macht.
+* Kommentierung grundsätzlich im HTML-Format.
+*
+*@param --> Nennt und beschreibt die verwendeten Parameter.
+*@return --> Beschreibt den Rückgabewert der Methode.
+*@author --> Autor dees Programms.
+*@version --> Version (1.0.0).
+*@see --> Kann auf andere Methoden verweisen (Hilft beim Verständins)
+*/ (end-comment delimiter)
+```
+
 ### Primitive Datentypen
 
 integer --> int, long, byte, short  
