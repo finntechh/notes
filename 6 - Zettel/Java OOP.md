@@ -41,10 +41,19 @@ public static void main(String[] args) {
 }
 ```  
 Es ist darauf zu achten, dass pro Datei nur eine Klasse den Modifizierer
-*public* besitzt. Am Besten ist es, wenn man pro Datei nur eine Klassen verwendet. Der Dateiname
+*public* besitzt. Am besten ist es, wenn man pro Datei nur eine Klasse verwendet. Der Dateiname
 muss der Name der Klasse entsprechen.
 
-### Objekterzeugung mit *new*
+#### Objekterzeugung mit *new*
+
+Mit dem *new* Operator lässt sich ein neues Objekt einer Klasse erzeugen.
+Dieser Prozess wird Instanziierung genannt und die Objekte werden folglich auch als Instanzen
+der Klasse bezeichnet.
+
+#### Identität
+
+
+
 
 ---
 ## Info
