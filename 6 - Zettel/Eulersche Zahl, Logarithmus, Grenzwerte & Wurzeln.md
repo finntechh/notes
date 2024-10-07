@@ -4,7 +4,7 @@ Tags: [[Mathe]] [[Grundlagen-&-Infinitesimalrechnung]] [[Python]] [[Data-Science
 
 ## Eulersche Zahl $e$
 
-Die Zahl $e$ kann in Python mit der exp() Funktion als Basis genutzt werden.
+Die Zahl $e$ kann in Python mit der exp() Funktion als Basis genutzt werden.kacke
 
 
 ```python
