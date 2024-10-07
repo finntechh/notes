@@ -17,7 +17,7 @@ Die Kommentierung erfolgt in Java nach einem bestimmten Schema.
 *@author --> Autor dees Programms.
 *@version --> Version (1.0.0).
 *@see --> Kann auf andere Methoden verweisen (Hilft beim Verständins)
-*/ (end-comment delimiter)
+*/ //(end-comment delimiter)
 ```
 
 ### Primitive Datentypen
@@ -318,3 +318,6 @@ for (int i = 1; i <= 50; i++) {
 *continue* funktioniert ähnlich wie *break* nur mit dem Unterschied, dass der Rest der Schleife nicht abgebrochen
 sondern übersprungen wird.  
 
+---
+## Info
+[[Baeldung]]
