@@ -53,6 +53,92 @@ der Klasse bezeichnet.
 #### Identität
 
 
+### Konkrete Klassen, interfaces und abstrakte Klassen
+
+#### Konkrete Klasse
+In konkreten Klassen sind alle Methoden implementiert und von der Klasse kann mit dem *new*
+Operator eine neue Instanz erstellt werden.
+
+Aufbau einer konkreten Klasse:
+```Java
+public class Auto() {
+    public String bremsen() {
+        return "Auto bremst";
+    }
+    
+    public String hupen() {
+        return "Auto hupt";
+    }
+    
+}
+
+Auto neuesAuto = new Auto();
+```
+
+Interfaces und abstrakte Klassen können in konkrete Klassen eingebaut werden.
+```Java
+public class SchönesAuto extend Fahrzeug implements Fahrbar {
+    public String hupen() {
+        return "Auto hupt";
+    }
+}
+```
+
+#### Interfaces
+
+Können als Vorlagen von Klassen verwendet werden und enthalten uninplementierte Methoden. 
+```Java
+interface Fahrbar {
+    void bremsen();
+    void hupen();
+}
+```
+
+#### Abstrakte Klassen
+
+Eine abstrakte Klasse kann unimplementierte und implementierte Methoden enthalten.
+```Java
+public abstract class Fahrzeug {
+    public abstract String hupen();
+    
+    public String fahren() {
+        return "Auto Fährt";
+    }
+}
+```
+
+### Access Modifiers
+
+Access Modifier regeln in Java die Zugriffsrechte auf Methoden, Variablen, Konstruktoren oder Klassen.  
+Eine Top-Level Klasse kann nur default oder public als Access Modifier besitzen. 
+Auf dem Member-Level, also in einer Top-Level Klasse können alle verwendet werden.
+
+#### Vergleich der Modifier Public, Protected, Default, und Private
+
+| Modifier  | Class | Package | Subclass | World |
+|:---------:|:-----:|:-------:|:--------:|:-----:|
+|  public   |   Y   |    Y    |    Y     |   Y   |
+| protected |   Y   |    Y    |    Y     |   N   |
+|  default  |   Y   |    Y    |    N     |   N   |
+|  private  |   Y   |    N    |    N     |   N   |
+
+Der default access modifier wird auch gesetzt, wenn kein access modifier definiert wird.  
+Default und package-private meinen das Gleiche.
+
+### Standard Reihenfolge der Modifikatoren
+
+Annotation --> Access Modifier --> andere Keywords  
+
+|  **Allgemein**  |   **Klassen**   |  **Methoden**   |
+|:---------------:|:---------------:|:---------------:|
+|   Annotation    |   Annotation    |   Annotation    |
+| Access Modifier | Access Modifier | Access Modifier |
+|    abstract     |    abstract     |    abstract     |
+|     static      |     static      |     static      |
+|      final      |      final      |      final      |
+|    transient    |    strictfp     |  synchronized   |
+|    volatile     |                 |     native      |
+|                 |                 |    strictfp     |
 
 
 ---
